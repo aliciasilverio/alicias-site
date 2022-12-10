@@ -73,11 +73,12 @@ p {
   margin: 0 auto;
   max-width: 1170px;
 }
-@media screen and (min-width: 992px) {
+ @media screen and (min-width: 992px)  {
   .section-center {
     width: 95vw;
   }
 }
+
 main {
   min-height: 100vh;
   display: flex;
@@ -210,15 +211,43 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  text-align: center;
 }
+
+.project-one:hover .image-one {filter: blur(4px);}
+.project-two:hover .image-two {filter: blur(4px);}
+.project-three:hover .image-three {filter: blur(4px);}
+.project-four:hover .image-four {filter: blur(4px);}
+
+
+
 
 
 .image-one, .image-two, .image-three, .image-four {
   width: 400px;
   height: 300px;
   border-radius: 5%;
+  opacity: 1;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
 
+.project-info-one, .project-info-two, .project-info-three, .project-info-four {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 275px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  opacity: 1;
+  border-radius: 5%;
+
+}
+
+.project-info-one, .project-info-two, .project-info-three, .project-info-four:hover {
+}
 
 
 
