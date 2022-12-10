@@ -167,14 +167,29 @@ nav {
   }
   .social-icons {
     display: flex;
+    text-decoration: none;
   }
   .social-icons a {
     margin: 0 0.5rem;
     transition: var(--transition);
+    color: black;
   }
   .social-icons a:hover {
-    color: pink;
+    color: rgb(151, 146, 146);
   }
+}
+
+/* CSS code for the link animation */
+.animated-link {
+  transition: all 0.2s ease-in-out;
+}
+
+/* When the mouse hovers over the link, increase the font size */
+.animated-link:hover {
+  transform: scale(1.1);
+}
+.animated-link:active {
+  text-decoration: underline; 
 }
 
 /* PROJECT SECTION */
@@ -192,17 +207,16 @@ nav {
 
 .project-one, .project-two, .project-three, .project-four {
   margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* CSS code for the link animation */
-.animated-link {
-  transition: all 0.2s ease-in-out;
-}
 
-/* When the mouse hovers over the link, increase the font size */
-.animated-link:hover {
-  transform: scale(1.1);
-  color: #E2BAB1;
+.image-one, .image-two, .image-three, .image-four {
+  width: 400px;
+  height: 300px;
+  border-radius: 5%;
 }
 
 
