@@ -223,14 +223,12 @@ nav {
 
 
 
-
 .image-one, .image-two, .image-three, .image-four {
   width: 400px;
   height: 300px;
   border-radius: 5%;
   opacity: 1;
   height: auto;
-  transition: .5s ease;
   backface-visibility: hidden;
 }
 
@@ -243,10 +241,15 @@ nav {
   background-color: white;
   opacity: 1;
   border-radius: 5%;
-
 }
 
-.project-info-one, .project-info-two, .project-info-three, .project-info-four:hover {
+/* Text (located inside of "project-one" etc div) is hidden until hovered over */
+
+.project-one div, .project-two div, .project-three div, .project-four div{
+  opacity: 0;
+}
+.project-one:hover div, .project-two:hover div, .project-three:hover div, .project-four:hover div{
+  opacity: 1;
 }
 
 
