@@ -14,12 +14,15 @@ body {
   /* background: linear-gradient(to right, #F08D7E, #EFA18A,#E2BAB1,#DDA6B9,#ACAEC5); */
   line-height: 1.5;
   font-size: 0.875rem;
+  font-family: 'Courier New', Courier, monospace
 }
 ul {
   list-style-type: none;
 }
 a {
   text-decoration: none;
+  cursor: pointer;
+  color: black;
 }
 
 h1 {
@@ -35,7 +38,11 @@ h4 {
   font-size: 0.875rem;
 }
 p {
-  margin-bottom: 1.25rem;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 @media screen and (min-width: 800px) {
@@ -190,7 +197,7 @@ nav {
   transform: scale(1.1);
 }
 .animated-link:active {
-  text-decoration: underline; 
+  null
 }
 
 /* PROJECT SECTION */
@@ -206,7 +213,11 @@ nav {
   align-items: center; 
 }
 
-.project-one, .project-two, .project-three, .project-four {
+.project-title {
+  font-weight: bold;
+}
+
+.projects {
   margin: 15px;
   display: flex;
   flex-direction: column;
@@ -215,42 +226,52 @@ nav {
   text-align: center;
 }
 
-.project-one:hover .image-one {filter: blur(4px);}
-.project-two:hover .image-two {filter: blur(4px);}
-.project-three:hover .image-three {filter: blur(4px);}
-.project-four:hover .image-four {filter: blur(4px);}
+.projects:hover .images {filter: blur(4px);}
 
+.projects div{
+  opacity: 0;
+}
+.projects:hover div{
+  opacity: 1;
+}
 
-
-
-.image-one, .image-two, .image-three, .image-four {
+.images {
   width: 400px;
   height: 300px;
   border-radius: 5%;
   opacity: 1;
   height: auto;
   backface-visibility: hidden;
+  
 }
 
-.project-info-one, .project-info-two, .project-info-three, .project-info-four {
+.project-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  background-color: rgb(255, 255, 255, 0.8);
+  border-radius: 5%;
+  width: 250px;
+  height: 150px;
+  font-size: 0.8rem;
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 275px;
   transform: translate(-50%, -50%);
-  background-color: white;
-  opacity: 1;
-  border-radius: 5%;
 }
 
-/* Text (located inside of "project-one" etc div) is hidden until hovered over */
+/* Text (located inside of "projects" div) is hidden until hovered over */
 
-.project-one div, .project-two div, .project-three div, .project-four div{
-  opacity: 0;
+
+
+.button-link {
+  background-color: transparent;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 2px 20px;
+  margin: 0px 5px;
 }
-.project-one:hover div, .project-two:hover div, .project-three:hover div, .project-four:hover div{
-  opacity: 1;
-}
-
-
 
