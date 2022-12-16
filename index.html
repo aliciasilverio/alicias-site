@@ -21,21 +21,23 @@
             <i class="fas fa-bars"></i>
           </button>
         </div>
+
         <!-- links -->
         <ul class="links">
           <li>
-            <a href="index.html" class="animated-link" class="active">home</a>
+            <a href="#home-section" class="nav-links" >home</a>
           </li>
           <li>
-            <a href="about.html" class="animated-link">about</a>
+            <a href="#about-me-section" class="nav-links">about</a>
           </li>
           <li>
-            <a href="projects.html" class="animated-link">projects</a>
+            <a href="#projects-section" class="nav-links">projects</a>
           </li>
           <li>
-            <a href="contact.html" class="animated-link">contact</a>
+            <a href="#contact-section" class="nav-links">contact</a>
           </li>
         </ul>
+
         <!-- social media -->
         <ul class="social-icons">
           <li>
@@ -57,13 +59,107 @@
       </div>
     </nav>
 
-    <!-- main section -->
-    <main class="main-index">
-      <h1>Welcome</h1>
-      <p>As a Front-End Web Developer, I am passionate about creating beautiful and functional user experiences on the web.</p>
-        <p>I have a strong foundation in HTML, CSS, and JavaScript, and I am always looking to learn and improve my skills. I am able to create responsive websites that look great on a variety of devices, and I have experience working with popular front-end frameworks such as React.</p>
-        <p>In addition to my technical skills, I am a strong communicator and team player, and I thrive in collaborative environments. When I'm not working on web projects, I enjoy staying active, traveling, and exploring new places.</p>
-    </main>
+    <!-- Home Section -->
+    <section class="home-section">
+      <h1 id="my-text">
+        Alicia Silverio
+      </h1>    
+      <h3 class="home-h3">Web Developer</h3>
+    </section>
+
+    <!-- Carousel Section -->    
+    <div class="slider">
+      <div class="slide-track">
+        <div class="slide">
+          <img src="images/icons/git_icon.png" alt="Git Icon" class="carousel-images"/>
+        </div>
+        <div class="slide">
+          <img src="images/icons/github.png" alt="Github Icon" class="carousel-images"/>
+        </div>
+        <div class="slide">
+          <img src="images/icons/html_icon.png" alt="HTML Icon" class="carousel-images"/>
+        </div>
+        <div class="slide">
+          <img src="images/icons/javascript_icon.png" alt="JavaScript Icon" class="carousel-images"/>
+        </div>
+        <div class="slide">
+          <img src="images/icons/jquery_icon.png" alt="JQuery Icon" class="carousel-images"/>
+        </div>
+        <div class="slide">
+          <img src="images/icons/mongodb_icon.png" alt="MongoDB Icon" class="carousel-images"/>
+        </div>
+        <div class="slide">
+          <img src="images/icons/nodejs_icon.png" alt="Node JS ICon" class="carousel-images"/>
+        </div>
+        <div class="slide">
+          <img src="images/icons/python_icon.png" alt="Python Icon" class="carousel-images"/>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Me Section -->
+    <section class="about-me-section">
+      <div class="about-me-text">
+        <p class="home-section-text">As a Front-End Web Developer, I am passionate about creating beautiful and functional user experiences on the web.</p>
+        <p class="home-section-text">I have a strong foundation in HTML, CSS, and JavaScript, and I am always looking to learn and improve my skills. I am able to create responsive websites that look great on a variety of devices, and I have experience working with popular front-end frameworks such as React.</p>
+        <p class="home-section-text">In addition to my technical skills, I am a strong communicator and team player, and I thrive in collaborative environments. When I'm not working on web projects, I enjoy staying active, traveling, and exploring new places.</p>
+      </div> 
+        <img src="images/selfie1_edited.jpeg" class="circle-img" alt="Selfie of Alicia"> 
+      </section>
+      
+
+
+        <!-- Projects -->
+<section class="projects-section">
+  <h2 class="projects-h2">Projects</h2>
+  <div class="row-one">
+    <div class="projects">
+      <img src="images/videoify.jpeg" class="images">
+      <div class="project-info">
+        <div class="project-title">To-Do Project</div>
+        <p>This is where I am going to put a small description for the Project</p>
+        <div class="buttons-container">
+          <a class="button-link" href="https://github.com/aliciasilverio/todo-list" target="__blank" rel="noreferrer noopener">GitHub</a>
+          <a class="button-link" href="https://aliciasilverio.github.io/todo-list/" target="__blank" rel="noreferrer noopener">Site</a>
+        </div>
+      </div>
+    </div>
+    <div class="projects">
+      <img src="images/videoify.jpeg" class="images">
+      <div class="project-info">
+        <div class="project-title">Color Flipper</div>
+        <p>This is where I am going to put a small description for the Project</p>
+        <div class="buttons-container">
+          <a class="button-link" href="https://github.com/aliciasilverio/color-flipper" target="__blank" rel="noreferrer noopener">GitHub</a>
+          <a class="button-link" href="https://aliciasilverio.github.io/color-flipper/" target="__blank" rel="noreferrer noopener">Site</a>
+        </div>      </div>
+    </div>
+  </div>
+  <div class="row-two">
+    <div class="projects">
+      <img src="images/videoify.jpeg" class="images">
+      <div class="project-info">
+        <div class="project-title">Videoify</div>
+        <p>This is where I am going to put a small description for the Project</p>
+        <div class="buttons-container">
+          <a class="button-link" href="https://github.com/aliciasilverio/Video-ify-front-end" target="__blank" rel="noreferrer noopener">GitHub</a>
+        </div>    
+      </div>
+    </div>
+    <div class="projects">
+      <img src="images/videoify.jpeg" class="images">
+      <div class="project-info">
+        <div class="project-title">Project 2</div>
+        <p>This is where I am going to put a small description for the Project</p>
+        <div class="buttons-container">
+          <a class="button-link" href="" target="__blank" rel="noreferrer noopener">GitHub</a>
+          <a class="button-link" href="" target="__blank" rel="noreferrer noopener">Website</a>
+        </div>      
+      </div>
+    </div>
+  </div>
+</section>
+
     <!-- javascript -->
     <script src="app.js"></script>
   </body>
