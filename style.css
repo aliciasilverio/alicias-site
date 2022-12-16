@@ -112,8 +112,8 @@ Navbar
 */
 
 nav {
-  background: rgba(0, 0, 0, 0.874);
-  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.842);
+background-color: #000000;
+box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.842);
 }
 .nav-header {
   display: flex;
@@ -151,6 +151,7 @@ nav {
   height: 0;
   overflow: hidden;
   transition: var(--transition);
+  gap: 2.5vh;
 }
 
 .show-links {
