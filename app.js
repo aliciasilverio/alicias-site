@@ -19,4 +19,9 @@ navToggle.addEventListener("click", function () {
   links.classList.toggle("show-links");
 });
 
-// WELCOME TEXT 
+// Ghost Cursor Effect
+// https://github.com/tholman/cursor-effects
+
+window.addEventListener('load', (event) => {
+  new cursoreffects.ghostCursor();
+});
