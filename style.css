@@ -228,24 +228,51 @@ z-index: 1;  /* set the z-index to 1 to make the navbar appear above other eleme
 .home-section {
   min-height: 50vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
+  justify-content: space-between;
   margin: 150px;
   gap: 2vh;
 
+}
+
+.home-main {
+  display: flex;
+  flex-direction: column;
 }
 
 .home-section-text {
   color: black;
 }
 
-.my-text {
+#my-text {
   font-family: Arial, Helvetica, sans-serif;
-  text-decoration: underline;
 }
-
 .home-h3 {
 
+}
+#heart { 
+  position: relative; 
+  width: 100px; 
+  height: 90px; 
+} 
+#heart:before, #heart:after { 
+  position: absolute; 
+  content: ""; 
+  left: 50px; 
+  top: 0; 
+  width: 50px; 
+  height: 80px; 
+  background: red; 
+  border-radius: 50px 50px 0 0; 
+  transform: rotate(-45deg); 
+  transform-origin: 0 100%; 
+} 
+
+#heart:after { 
+  left: 0; 
+  transform: rotate(45deg); 
+  transform-origin :100% 100%; 
 }
 
 
@@ -394,6 +421,8 @@ z-index: 1;  /* set the z-index to 1 to make the navbar appear above other eleme
     border-bottom: 500px;
   }
 }
+
+
 
 /* CONTACT SECTION */
 
