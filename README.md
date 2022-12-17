@@ -9,4 +9,4 @@
 
 ##### Overall, I am very proud of this portfolio website and I hope that you enjoy exploring it. Please feel free to contact me if you have any questions or comments. Thank you for visiting!
 
-##### This site was built using GitHub Pages[Check it Out!](https://aliciasilverio.github.io/alicias-site/).
+##### This site was built using GitHub Pages [Check it Out!](https://aliciasilverio.github.io/alicias-site/).

@@ -1,6 +1,7 @@
 /* #F2D7D9 #D3CEDF #9CB4CC #748DA6 */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@1000&family=Itim&family=Nabla&family=Noto+Sans:wght@500&family=Roboto:wght@300&family=Rubik+Vinyl&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@1000&family=Itim&family=Nabla&family=Noto+Sans:wght@500&family=Roboto:wght@300&family=Rubik+Vinyl&family=Sacramento&family=Staatliches&family=Zen+Dots&display=swap');
 
 *,
 ::after,
@@ -34,8 +35,9 @@ body {
   a {
   text-decoration: none;
   cursor: pointer;
-  color: white;
+  color: black;
   border-color: black;
+  
 }
 
 h1 {
@@ -282,29 +284,35 @@ z-index: 1;  /* set the z-index to 1 to make the navbar appear above other eleme
 .about-me-section {
   min-height: 70vh;
   background-color: black;
-}
-.about-me-text-section {
-  display: flex;
-  flex-direction: row;
+
 }
 .about {
   color: white;
   font-family: 'Courier New', Courier, monospace;
   display: flex;
+  text-align: right;
 }
 .A {
   color: white;
   font-family: 'Courier New', Courier, monospace;
+  font-size: 450px;
+  font-family: 'Staatliches', cursive;
 }
 .about-me-text {
  color: white;
+
 }
 .col-container {
-  display: table; /* Make the container element behave like a table */
-  width: 100%; /* Set full-width to expand the whole page */
+min-height: 70vh;
+display: flex;
+flex-direction: row;
+align-items: center;
+align-content: center;
+margin-left: 50px;
+margin-right: 50px;
 }
 .col {
-  display: table-cell;
+margin: 50px;
 }
 
 
@@ -344,19 +352,6 @@ z-index: 1;  /* set the z-index to 1 to make the navbar appear above other eleme
   position: relative;
   text-align: center;
 }
-
-.projects:hover .images {
-  filter: blur(4px);
-
-}
-
-.projects div{
-  opacity: 0;
-}
-.projects:hover div{
-  opacity: 1;
-}
-
 .images {
   width: 400px;
   height: 300px;
@@ -364,8 +359,20 @@ z-index: 1;  /* set the z-index to 1 to make the navbar appear above other eleme
   opacity: 1;
   height: auto;
   backface-visibility: hidden;
-  
+  position: relative; 
 }
+
+.projects:hover .images {
+  filter: blur(4px);
+}
+.projects div{
+  opacity: 0;
+}
+.projects:hover div{
+  opacity: 1;
+}
+
+
 
 .project-info{
   display: flex;
