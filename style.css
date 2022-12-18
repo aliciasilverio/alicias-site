@@ -235,12 +235,18 @@ z-index: 1;  /* set the z-index to 1 to make the navbar appear above other eleme
   justify-content: space-between;
   margin: 150px;
   gap: 2vh;
-
+  background-color: white;
+  border-radius: 10px;
+  opacity: 0.5;
+  height: auto;
+  backface-visibility: hidden;
+  position: relative; 
 }
 
 .home-main {
   display: flex;
   flex-direction: column;
+  
 }
 
 .home-section-text {
@@ -250,7 +256,8 @@ z-index: 1;  /* set the z-index to 1 to make the navbar appear above other eleme
 #my-text {
   font-family: Arial, Helvetica, sans-serif;
 }
-.home-h3 {
+
+/* .home-h3 {
 
 }
 #heart { 
@@ -265,7 +272,7 @@ z-index: 1;  /* set the z-index to 1 to make the navbar appear above other eleme
   top: 0; 
   width: 50px; 
   height: 80px; 
-  background: red; 
+  background: transparent;
   border-radius: 50px 50px 0 0; 
   transform: rotate(-45deg); 
   transform-origin: 0 100%; 
@@ -275,7 +282,7 @@ z-index: 1;  /* set the z-index to 1 to make the navbar appear above other eleme
   left: 0; 
   transform: rotate(45deg); 
   transform-origin :100% 100%; 
-}
+} */
 
 
 
@@ -289,8 +296,10 @@ z-index: 1;  /* set the z-index to 1 to make the navbar appear above other eleme
 .about {
   color: white;
   font-family: 'Courier New', Courier, monospace;
-  display: flex;
   text-align: right;
+  margin-right: 100px;
+  padding-top: 50px;
+  font-family: 'Staatliches', cursive;
 }
 .A {
   color: white;
@@ -312,8 +321,39 @@ margin-left: 50px;
 margin-right: 50px;
 }
 .col {
-margin: 50px;
+margin-left: 100px;
+margin-right: 50px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 }
+
+
+/* Background Video Section */
+
+.background-video-section {
+  min-height: 30vh;
+}
+
+.ParallaxVideo{ 
+  height: 300px;
+  padding-bottom: 50px;
+  padding-top: 50px; 
+}
+.ParallaxVideo video{ 
+  min-width: 100%;
+  position: fixed;
+  top:0;
+  z-index: -999;
+}
+.ParallaxVideo h1 {
+color: #fff;
+font-size: 76px;
+font-weight: 700;
+text-align: center;
+text-transform: uppercase;
+}
+
 
 
 /* PROJECT SECTION */
@@ -328,10 +368,12 @@ margin: 50px;
   height: 100%;
   align-items: center; 
   margin-top: 60px;
+  background-color: white;
 }
 
 .projects-h2 {
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 
