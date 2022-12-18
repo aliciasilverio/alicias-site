@@ -25,3 +25,7 @@ navToggle.addEventListener("click", function () {
 window.addEventListener('load', (event) => {
   new cursoreffects.ghostCursor();
 });
+
+
+// Contact Me Form
+
