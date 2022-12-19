@@ -29,3 +29,8 @@ window.addEventListener('load', (event) => {
 
 
 
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  // Your code to handle form submission goes here
+});

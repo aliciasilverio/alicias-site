@@ -62,11 +62,15 @@
     <!-- Home Section -->
     <section class="home-section">
       <div class="home-main">
+        <div>
         <h1 id="my-text">Alicia Silverio</h1>
         <hr />
       <h3 class="home-h3">Web Developer</h3>
+    </div>
+      <div class="home-img-container">
+      <img src="images/mac_cafe_starbucks._" class="home-img">
       </div> 
-
+    </div>
       <!-- <div id="heart"></div> -->
     </section>
 
@@ -99,7 +103,7 @@
       <img src="images/colors.jpeg" class="images">
       <div class="project-info">
         <div class="project-title">Color Flipper</div>
-        <p>This is where I am going to put a small description for the Project</p>
+        <p style="margin-left: 20px; margin-right: 20px;">This is where I am going to put a small description for the Project</p>
         <div class="buttons-container">
           <a class="github-button-link" href="https://github.com/aliciasilverio/color-flipper" target="__blank" rel="noreferrer noopener">GitHub</a>
           <a class="site-button-link" href="https://aliciasilverio.github.io/color-flipper/" target="__blank" rel="noreferrer noopener">Site</a>
@@ -110,7 +114,7 @@
       <img src="images/videoify.jpeg" class="images">
       <div class="project-info">
         <div class="project-title">Videoify</div>
-        <p>"Videoify" is a music web app that allows users to search for and add their favorite YouTube videos to a personalized playlist. It has full CRUD functionality and uses the YouTube API.</p>
+        <p style="margin-left: 20px; margin-right: 20px;">"Videoify" is a music web app that allows users to search for and add their favorite YouTube videos to a personalized playlist. It has full CRUD functionality and uses the YouTube API.</p>
         <div class="buttons-container">
           <a class="github-button-link" href="https://github.com/aliciasilverio/Video-ify-front-end" target="__blank" rel="noreferrer noopener">GitHub</a>
         </div>    
@@ -120,7 +124,7 @@
       <img src="images/to-do.jpeg" class="images">
       <div class="project-info">
         <div class="project-title">To-Do Project</div>
-        <p>This web app that allows users to add, remove, and prioritize tasks in an efficient and user-friendly manner. It is responsive and built with HTML, CSS, and JavaScript to provide a seamless user experience.</p>
+        <p style="margin-left: 20px; margin-right: 20px;">This web app that allows users to add, remove, and prioritize tasks in an efficient and user-friendly manner. It is responsive and built with HTML, CSS, and JavaScript to provide a seamless user experience.</p>
         <div class="buttons-container">
           <a class="github-button-link" href="https://github.com/aliciasilverio/todo-list" target="__blank" rel="noreferrer noopener">GitHub</a>
           <a class="site-button-link" href="https://aliciasilverio.github.io/todo-list/" target="__blank" rel="noreferrer noopener">Site</a>
@@ -146,43 +150,19 @@
   <div class="Contact-C">
     <h1 class="C">C</h1>
   </div>
-  <div id="fcf-form">
-    <h3 class="fcf-h3">Contact us</h3>
+  <form id="contact-form">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message"></textarea><br>
+    <button type="submit">Submit</button>
+  </form> 
+  
 
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-        
-        <div class="fcf-form-group">
-            <label for="Name" class="fcf-label">Your name</label>
-            <div class="fcf-input-group">
-                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-            </div>
-        </div>
-
-        <div class="fcf-form-group">
-            <label for="Email" class="fcf-label">Your email address</label>
-            <div class="fcf-input-group">
-                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-            </div>
-        </div>
-
-        <div class="fcf-form-group">
-            <label for="Message" class="fcf-label">Your message</label>
-            <div class="fcf-input-group">
-                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-            </div>
-        </div>
-
-        <div class="fcf-form-group">
-            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
-        </div>
-
-        <div class="fcf-credit" id="fcf-credit">
-        Simple HTML email form provided by <a href="https://www.majesticform.com" target="_blank">MajesticForm</a>
-        </div>
-      </form>
-    </div>
     <div class="contact-div">
-      <h2>Contact Me</h2>
+      <h2 class="contact-me">Contact Me</h2>
   </div>
   </main>
 </section>
