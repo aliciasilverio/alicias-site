@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,7 +10,7 @@
   </head>
   <!-- Body -->
   <body>
-    <nav>
+    <nav class="navbar">
       <div class="nav-center">
         <!-- nav header -->
         <div class="nav-header">
@@ -29,7 +28,8 @@
             <li>
               <a href="#contact-section" class="nav-links">contact</a>
             </li>
-          </ul>          <button class="nav-toggle">
+          </ul>          
+          <button class="nav-toggle">
             <i class="fas fa-bars"></i>
           </button>
         </div>
@@ -57,24 +57,29 @@
       </div>
     </nav>
 
-
+      
 
     <!-- Home Section -->
     <section class="home-section">
       <div class="home-main">
         <h1 id="my-text">Alicia Silverio</h1>
+        <hr />
       <h3 class="home-h3">Web Developer</h3>
-    </div> 
+      </div> 
+
+      <!-- <div id="heart"></div> -->
     </section>
 
-
+<!-- z-index 0: video background -->
+<!-- z-index 1: white background -->
+<!-- z-index 2: heart with transparent background and video background on the same index-->
 
     <!-- About Me Section -->
     <section class="about-me-section">
       <h2 class="about">About</h2>
       <div class="col-container" class="about-me-text-section">
         <div>
-          <h1 class="A">A</h1>
+          <h1 class="A" >A</h1>
         </div>
         <div class="col">
           <p class="about-me-text">As a Front-End Web Developer, I am passionate about creating beautiful and functional user experiences on the web. I have a strong foundation in HTML, CSS, and JavaScript, and I am always looking to learn and improve my skills. </p>
@@ -84,72 +89,63 @@
       </div>
       </section>
 
-
-      <!-- Background Video Section -->
-      <section class="background-video-section">
-        <div class="ParallaxVideo">
-          <video autoplay muted loop>
-          <source src="videos/Grass - 66810.mp4" type="video/mp4">
-          </video>
-        </div>
-      </section>
       
 
-        <!-- Projects -->
+        <!-- Projects Section -->
 <section class="projects-section">
-    <h2 class="projects-h2">Projects</h2>
-  <div class="row-one">
-    <div class="projects">
-      <img src="images/to-do.jpeg" class="images">
-      <div class="project-info">
-        <div class="project-title">To-Do Project</div>
-        <p>This is where I am going to put a small description for the Project</p>
-        <div class="buttons-container">
-          <a class="button-link" href="https://github.com/aliciasilverio/todo-list" target="__blank" rel="noreferrer noopener">GitHub</a>
-          <a class="button-link" href="https://aliciasilverio.github.io/todo-list/" target="__blank" rel="noreferrer noopener">Site</a>
-        </div>
-      </div>
-    </div>
+    <h2 class="projects-h2">Recent Projects</h2>
+    <div class="projects-container">
     <div class="projects">
       <img src="images/colors.jpeg" class="images">
       <div class="project-info">
         <div class="project-title">Color Flipper</div>
         <p>This is where I am going to put a small description for the Project</p>
         <div class="buttons-container">
-          <a class="button-link" href="https://github.com/aliciasilverio/color-flipper" target="__blank" rel="noreferrer noopener">GitHub</a>
-          <a class="button-link" href="https://aliciasilverio.github.io/color-flipper/" target="__blank" rel="noreferrer noopener">Site</a>
+          <a class="github-button-link" href="https://github.com/aliciasilverio/color-flipper" target="__blank" rel="noreferrer noopener">GitHub</a>
+          <a class="site-button-link" href="https://aliciasilverio.github.io/color-flipper/" target="__blank" rel="noreferrer noopener">Site</a>
         </div>      </div>
     </div>
-  </div>
-  <div class="row-two">
+
     <div class="projects">
       <img src="images/videoify.jpeg" class="images">
       <div class="project-info">
         <div class="project-title">Videoify</div>
         <p>"Videoify" is a music web app that allows users to search for and add their favorite YouTube videos to a personalized playlist. It has full CRUD functionality and uses the YouTube API.</p>
         <div class="buttons-container">
-          <a class="button-link" href="https://github.com/aliciasilverio/Video-ify-front-end" target="__blank" rel="noreferrer noopener">GitHub</a>
+          <a class="github-button-link" href="https://github.com/aliciasilverio/Video-ify-front-end" target="__blank" rel="noreferrer noopener">GitHub</a>
         </div>    
       </div>
     </div>
     <div class="projects">
-      <img src="images/videoify.jpeg" class="images">
+      <img src="images/to-do.jpeg" class="images">
       <div class="project-info">
-        <div class="project-title">Project 2</div>
-        <p>This is where I am going to put a small description for the Project</p>
+        <div class="project-title">To-Do Project</div>
+        <p>This web app that allows users to add, remove, and prioritize tasks in an efficient and user-friendly manner. It is responsive and built with HTML, CSS, and JavaScript to provide a seamless user experience.</p>
         <div class="buttons-container">
-          <a class="button-link" href="" target="__blank" rel="noreferrer noopener">GitHub</a>
-          <a class="button-link" href="" target="__blank" rel="noreferrer noopener">Website</a>
-        </div>      
+          <a class="github-button-link" href="https://github.com/aliciasilverio/todo-list" target="__blank" rel="noreferrer noopener">GitHub</a>
+          <a class="site-button-link" href="https://aliciasilverio.github.io/todo-list/" target="__blank" rel="noreferrer noopener">Site</a>
+        </div>
       </div>
     </div>
-  </div>
+    </div>
 </section>
+
+      <!-- Background Video Section -->
+      <section class="background-video-section">
+        <div class="parallaxvideo">
+          <video autoplay muted loop>
+          <source src="videos/Grass - 66810.mp4" type="video/mp4">
+          </video>
+        </div>
+      </section>
 
 <!-- Contact Section -->
 
 <section class="contact-section">
-  <h2>Contact Me</h2>
+  <div class="Contact-C">
+    <h2>Contact Me</h2>
+    <h1 class="C">C</h1>
+  </div>
 
 </section>
 
