@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alicia's Site &hearts;</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
     <link rel="stylesheet" href="style.css" />
@@ -64,7 +65,7 @@
     <section class="home-section">
       <div class="typewriter">
         <h1>Hi! I'm Alicia Silverio...</h1>
-        <h2 id="showMe">Web Developer</h2>
+        <h2 id="showMe">A Software Engineer</h2>
       </div>
     </section>
   </a>
@@ -100,7 +101,7 @@
       <img src="images/colors.jpeg" class="images">
       <div class="project-info">
         <div class="project-title">Color Flipper</div>
-        <p style="margin-left: 20px; margin-right: 20px;">This is where I am going to put a small description for the Project</p>
+        <p style="margin-left: 20px; margin-right: 20px;">Color Flipper is a web app that allows users to flip through different colors and find the perfect shade. There are two modes available: predefined colors or a selection of hex colors. Users can easily experiment with different color combinations.</p>
         <div class="buttons-container">
           <a class="github-button-link" href="https://github.com/aliciasilverio/color-flipper" target="__blank" rel="noreferrer noopener">GitHub</a>
           <a class="site-button-link" href="https://aliciasilverio.github.io/color-flipper/" target="__blank" rel="noreferrer noopener">Site</a>
@@ -141,32 +142,39 @@
         </div>
       </section> -->
 
+<!-- Skills Section -->
+
+<section class="skills-section">
+  <div>
+    <h2>Skills</h2>
+  </div>
+</section>
+
 <!-- Contact Section -->
 <a name="contact-section">
 <section class="contact-section">
   <h2 class="contact">Contact</h2>
   <div class="col-container" class="about-me-text-section">
+    <div>
+      <h1 class="C" >C</h1>
+    </div>
     <div class="col">
       <div class="container">
-        <form action="action_page.php">
-      
+        <form action="mailto:someone@example.com" method="post" enctype="text/plain">      
+
           <label for="fname">First Name</label>
           <input type="text" id="fname" name="firstname" placeholder="Your name..">
       
           <label for="lname">Last Name</label>
           <input type="text" id="lname" name="lastname" placeholder="Your last name..">
       
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-      
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Your email..">
+
           <label for="subject">Subject</label>
           <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
       
-          <input type="submit" value="Submit">
+          <input type="submit" value="Send">
       
         </form>
       </div>

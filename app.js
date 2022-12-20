@@ -36,5 +36,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 });
 
 
-// Ball background
-
+const ScrollReveal = require('scrollreveal');
+ScrollReveal().reveal('.A');
+ScrollReveal().reveal('.about-me-text');
+ScrollReveal().reveal('.projects-h2');
