@@ -238,36 +238,60 @@ transition: top 0.3s;
 .home-section {
   height: 80vh;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  background-color: white;
-
-}
-
-.home-main {
-  display: flex;
-  flex-direction: row;
-  margin: 150px;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  background-color: transparent;
+
 }
 
-.home-section-text {
-  color: black;
+.typewriter {
+  display: flex;
+  flex-direction: column;
 }
-
-#my-text {
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
   font-family: 'Staatliches', cursive;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
-.home-img-container {
-
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
 }
 
-.home-img {
-  border-radius: 50%;
-  height: 300px;
-  width: 300px;
-  margin-left: 70vh;
+#showMe {
+  animation: cssAnimation 0s 4s forwards;
+  visibility: hidden;
+}
+@keyframes cssAnimation {
+  to   { visibility: visible; }
+}
+
+
+
+
+/* background */
+
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
 }
 
 /* heart */
@@ -322,7 +346,6 @@ transition: top 0.3s;
 }
 .about-me-text {
  color: white;
-
 }
 .col-container {
 min-height: 70vh;
@@ -346,12 +369,12 @@ font-size: 20px;
 
 /* Background Video Section */
 
-.background-video-section {
+/* .background-video-section { */
   /* height: 100vh;
   width: 100vh; */
-}
+/* } */
 
-.parallaxvideo{ 
+/* .parallaxvideo{ 
   height: 300px;
   padding-bottom: 50px;
   padding-top: 50px; 
@@ -370,7 +393,7 @@ font-size: 76px;
 font-weight: 700;
 text-align: center;
 text-transform: uppercase;
-}
+} */
 
 
 
@@ -636,4 +659,4 @@ textarea{
 
 /* FADING THESE IN */
 
-/* #A4BE7B */
+/* #A4BE7B #957BBE */
