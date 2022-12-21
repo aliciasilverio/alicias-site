@@ -93,6 +93,7 @@ p {
   h4 {
     line-height: 1;
   }
+
 }
 
 hr {
@@ -245,9 +246,7 @@ transition: top 0.3s;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(-45deg,#000000, #A4BE7B, #957BBE, #ffffff );
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+  background: transparent;
 }
 
 @keyframes gradient {
@@ -392,18 +391,16 @@ font-size: 20px;
   width: 100vh; */
 /* } */
 
-/* .parallaxvideo{ 
-  height: 300px;
+.parallaxvideo{ 
+  /* height: 300px; */
   padding-bottom: 50px;
   padding-top: 50px; 
 }
 .parallaxvideo video{ 
-  position: fixed;
   min-width:fit-content;
   position: fixed;
   top:0;
   z-index: -999;
-  width: 100vh;
 }
 .parallaxvideo h1 {
 color: #fff;
@@ -411,7 +408,7 @@ font-size: 76px;
 font-weight: 700;
 text-align: center;
 text-transform: uppercase;
-} */
+}
 
 
 
@@ -422,13 +419,13 @@ text-transform: uppercase;
 } */
 
 .projects-section {
-  min-height: 80vh;
+  min-height: 70vh;
   display: flex;
   align-items: center; 
   margin-top: 60px;
   background-color: white;
   flex-direction: column;
-  z-index: 2
+  z-index: 2;
 }
 
 .projects-h2 {
@@ -436,6 +433,8 @@ text-transform: uppercase;
   margin-top: 80px;
   font-family: 'Staatliches', cursive;
 }
+.projects-h2:hover {transform: scale(1.1)}
+
 
 .project-title {
   font-weight: bold;
@@ -561,7 +560,15 @@ text-transform: uppercase;
     min-height: 333.3px;
     border-radius: 5%;
   }
-  
+
+   .parallaxvideo { /* hottie */
+    display: none;
+  }
+  .home-section {
+    background: linear-gradient(-45deg,#000000, #A4BE7B, #957BBE, #ffffff );
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
   .project-info{
     /* display: flex; */
     flex-direction: column;
@@ -600,7 +607,7 @@ text-transform: uppercase;
   flex-direction: column;
 }
 .technical h2{text-decoration: underline;}
-
+.technical h2:hover{transform: scale(1.1)}
 .technical li{
   text-decoration: none;
   font-size: 16px;
@@ -615,6 +622,7 @@ text-transform: uppercase;
   font-size: 16px;
 }
 .soft h2 {text-decoration: underline;}
+.soft h2:hover{transform: scale(1.1)}
 
 /* CONTACT SECTION */
 
