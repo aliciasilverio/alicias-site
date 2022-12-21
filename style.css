@@ -416,6 +416,10 @@ text-transform: uppercase;
 
 
 /* PROJECTS SECTION */
+/* .giphy {
+  position: absolute; 
+  display: flex;
+} */
 
 .projects-section {
   min-height: 80vh;
@@ -593,9 +597,9 @@ text-transform: uppercase;
 .technical {
   color: white;
   display: flex;
-  align-items: center;
   flex-direction: column;
 }
+.technical h2{text-decoration: underline;}
 
 .technical li{
   text-decoration: none;
@@ -604,13 +608,13 @@ text-transform: uppercase;
 .soft {
   color: white;
   display: flex;
-  align-items: center;
   flex-direction: column;
 }
 .soft li {
   text-decoration: none;
   font-size: 16px;
 }
+.soft h2 {text-decoration: underline;}
 
 /* CONTACT SECTION */
 
