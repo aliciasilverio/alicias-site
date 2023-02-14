@@ -341,12 +341,15 @@ transition: top 0.3s;
   transform-origin: 100% 100%;
 } */
 
+a{
+  scroll-margin-top: 150px;
+}
 
 /* ABOUT ME SECTION */
 .about-me-section {
   min-height: 70vh;
   background-color: black;
-  z-index: 2
+  z-index: 2;
 }
 
 .about {
@@ -720,3 +723,7 @@ input[type=submit]:hover {
 
 /* #A4BE7B #957BBE */  
 
+/* adjust the scroll position of linked sections */
+section {
+  scroll-margin-top: 300px; /* adjust this value to control how far above the section the landing position should be */
+}
