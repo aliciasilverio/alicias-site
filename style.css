@@ -222,7 +222,7 @@ transition: top 0.3s;
     color: white;
   }
   .social-icons a:hover {
-    color: #957BBE;
+    color: #47572c;
 }
 
 /* CSS code for the link animation */
@@ -348,6 +348,7 @@ transition: top 0.3s;
   background-color: black;
   z-index: 2
 }
+
 .about {
   color: white;
   text-align: right;
@@ -675,7 +676,7 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #957BBE;
+  background-color: #47572c;
 }
 
 /* Add a background color and some padding around the form */
@@ -707,7 +708,7 @@ input[type=submit]:hover {
   margin: 0;
 }
 .footer p:hover {
-  color: #957BBE;
+  color: #47572c;
 }
 
 .footer p{
